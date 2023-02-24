@@ -3,7 +3,7 @@
 const [...arr] = document.querySelectorAll(".stats");
 const menu = document.querySelector(".menu");
 
-window.addEventListener("load", update());
+window.addEventListener("load", update.bind(null, "weekly"));
 
 menu.addEventListener("click", (e) => button(e));
 
@@ -33,7 +33,7 @@ async function getData(index) {
   return dataJSON[index];
 }
 
-function update(value = "weekly") {
+function update(value) {
   arr.forEach((_, index) => displayStats(index, value));
 }
 

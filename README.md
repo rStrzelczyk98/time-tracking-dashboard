@@ -14,7 +14,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: [Dashboard](https://your-live-site-url.com)
+- Live Site URL: [Dashboard](https://rstrzelczyk98.github.io/time-tracking-dashboard/)
 
 ## Built with
 
