@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/layout.css" />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <style></style>
+  </head>
+  <body>
+    <main class="card-conatiner">
+      <nav class="user-card">
+        <header class="user">
+          <img class="avatar" src="images/image-jeremy.png" alt="" />
+          <h1>Report for <span>Jeremy Robson</span></h1>
+        </header>
+
+        <ul class="menu">
+          <li class="item">
+            <button class="button daily">Daily</button>
+          </li>
+          <li class="item">
+            <button class="button weekly active">Weekly</button>
+          </li>
+          <li class="item"><button class="button monthly">Monthly</button></li>
+        </ul>
+      </nav>
+
+      <figure class="card work">
+        <section class="info">
+          <h2 class="title">Work <a href="#">...</a></h2>
+          <div class="stats">
+            <p id="current-work"></p>
+            <p id="previous-work"></p>
+          </div>
+        </section>
+      </figure>
+
+      <figure class="card play">
+        <section class="info">
+          <h2 class="title">Play <a href="#">...</a></h2>
+          <div class="stats">
+            <p id="current-play"></p>
+            <p id="previous-play"></p>
+          </div>
+        </section>
+      </figure>
+
+      <figure class="card study">
+        <section class="info">
+          <h2 class="title">Study <a href="#">...</a></h2>
+          <div class="stats">
+            <p id="current-study"></p>
+            <p id="previous-study"></p>
+          </div>
+        </section>
+      </figure>
+
+      <figure class="card exercise">
+        <section class="info">
+          <h2 class="title">Exercise <a href="#">...</a></h2>
+          <div class="stats">
+            <p id="current-exercise"></p>
+            <p id="previous-exercise"></p>
+          </div>
+        </section>
+      </figure>
+
+      <figure class="card social">
+        <section class="info">
+          <h2 class="title">Social <a href="#">...</a></h2>
+          <div class="stats">
+            <p id="current-social"></p>
+            <p id="previous-social"></p>
+          </div>
+        </section>
+      </figure>
+
+      <figure class="card self-care">
+        <section class="info">
+          <h2 class="title">Self Care <a href="#">...</a></h2>
+          <div class="stats">
+            <p id="current-self-care"></p>
+            <p id="previous-self-care"></p>
+          </div>
+        </section>
+      </figure>
+    </main>
+
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/rStrzelczyk98" target="_blank"
+          >Robert Strzelczyk</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>

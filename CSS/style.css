@@ -1,0 +1,203 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+/* COLORS */
+:root {
+  /* PRIMARY */
+  --work: hsl(15, 100%, 70%);
+  --play: hsl(195, 74%, 62%);
+  --study: hsl(348, 100%, 68%);
+  --exercise: hsl(145, 58%, 55%);
+  --social: hsl(264, 64%, 52%);
+  --self-care: hsl(43, 84%, 65%);
+  /* NEUTRAL */
+  --page-background: hsl(226, 43%, 10%);
+  --card-background: hsl(235, 46%, 20%);
+  --user-background: hsl(246, 80%, 60%);
+  --hover: hsl(235, 45%, 61%);
+  --font-secondary: hsl(236, 100%, 87%);
+  --font-primary: hsl(0, 100%, 100%);
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+a,
+.button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--page-background);
+}
+
+/* USER CARD */
+.user-card {
+  background-color: var(--card-background);
+  border-radius: 1.5rem;
+}
+.user {
+  background-color: var(--user-background);
+  padding: 2.5rem;
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.avatar {
+  max-width: 8rem;
+  display: block;
+  border-radius: 50%;
+  border: 0.3rem solid var(--font-primary);
+}
+h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--font-secondary);
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+h1 > span {
+  color: var(--font-primary);
+  font-size: 2.4rem;
+}
+/* NAV */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 2.5rem;
+}
+.item {
+  list-style-type: none;
+}
+.button {
+  outline: transparent;
+  border: transparent;
+  background-color: transparent;
+  color: var(--font-secondary);
+  font-weight: 400;
+  font-size: 1.8rem;
+  transition: all 250ms linear;
+}
+.button:is(:hover, :focus) {
+  cursor: pointer;
+  color: var(--font-primary);
+}
+.active {
+  color: var(--font-primary);
+}
+/* STATS CARD */
+.card {
+  border-radius: 1.5rem;
+  border-end-start-radius: 3rem;
+  border-end-end-radius: 3rem;
+  padding-top: 4rem;
+}
+.card:is(:hover, :focus) {
+  cursor: pointer;
+}
+.card:is(:hover, :focus) .info {
+  background-color: var(--hover);
+}
+.info {
+  background-color: var(--card-background);
+  border-radius: 1.5rem;
+  padding: 2.75rem 2.5rem;
+  display: grid;
+  gap: 0.5rem;
+  transition: all 250ms linear;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  color: var(--font-primary);
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.title > a:is(:link, :visited) {
+  color: var(--font-secondary);
+  font-family: serif;
+  font-size: 4rem;
+  letter-spacing: -0.3rem;
+  line-height: 0;
+  text-decoration: none;
+}
+.title > a:is(:hover, :active) {
+  color: var(--font-primary);
+}
+.stats {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.stats p:first-of-type {
+  color: var(--font-primary);
+  font-weight: 300;
+  font-size: 3rem;
+}
+.stats p:last-of-type {
+  color: var(--font-secondary);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+/* STATS CARD TYPES */
+.card {
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+}
+.work {
+  background-color: var(--work);
+  background-image: url(../images/icon-work.svg);
+  background-position-y: -1.1rem;
+}
+.play {
+  background-color: var(--play);
+  background-image: url(../images/icon-play.svg);
+  background-position-y: -0.3rem;
+}
+.study {
+  background-color: var(--study);
+  background-image: url(../images/icon-study.svg);
+  background-position-y: -0.3rem;
+}
+.exercise {
+  background-color: var(--exercise);
+  background-image: url(../images/icon-exercise.svg);
+  background-position-y: 0.1rem;
+}
+.social {
+  background-color: var(--social);
+  background-image: url(../images/icon-social.svg);
+  background-position-y: -1.5rem;
+}
+.self-care {
+  background-color: var(--self-care);
+  background-image: url(../images/icon-self-care.svg);
+  background-position-y: -1.1rem;
+}
+
+/* FOOTER */
+.attribution p {
+  color: var(--font-secondary);
+  padding-block: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a:is(:link, :visited) {
+  color: var(--work);
+  text-decoration: none;
+}
+.attribution a:is(:hover, :active) {
+  text-decoration: underline;
+}
